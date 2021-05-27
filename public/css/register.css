@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: roboto;
+}
+/**************************** HEADER ********************************/
+.mainHeader{
+    text-align: left;
+    background-color: #EAC926;
+    padding: 20px; 
+}
+.mainHeaderTopBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainHeaderBottomBar {
+    display: flex;
+    justify-content: space-between;
+}
+.mainHeaderBottomBar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.mainHeaderBottomBar a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+}
+.logo{
+    width: 40vw;
+}
+
+.phrase{
+    width: 35vw;
+    padding-bottom: 10px;
+    text-align: end;
+    font-size: 30px;
+}
+
+/**************************** MAIN *******************************/
+
+form{
+    display: flex;
+    background: #eee;
+    padding: 16px;
+    border-radius: 8px;
+    width: 60%;
+    min-width: 320px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+form *{
+    display: flex;
+    border: none;
+    padding: 10px 5px;
+    flex-direction: column;
+    width: 90%;
+}
+
+.buttonBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonBox *{
+    width: 35%;
+    background-color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+    border: black 3px solid;
+    margin: auto;
+}
+
+
+.title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+/**************************** FOOTER ********************************/
+.footer{
+    text-align: center;
+    background-color: white;
+    padding-top: 20px;
+    border-top: solid black 2px;
+    margin-top: 200px;
+}
+
+.texto{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+
+.icons{
+    text-align: center;
+    margin: auto;
+}
+.icons *{
+        font-size: 2em;
+        color: #03264C;
+        margin-bottom: 10px;
+}
+
+
+/*************************** MEDIA QUERIES *******************************/
+@media (min-width: 1220px){
+    .mainHeaderBottomBar *{
+        font-size: 18px;
+    }
+    .icons *{
+        transition: all 100ms;
+    
+    }
+    
+    .icons:hover *{
+        color: #EAC926;
+        font-size: 30px;
+    }
+    .footer *{
+        width: 30vw;
+        margin-bottom: 5px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
