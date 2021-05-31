@@ -50,8 +50,7 @@ form{
     background: #eee;
     padding: 16px;
     border-radius: 8px;
-    width: 60%;
-    min-width: 320px;
+    width: 98vw;
     flex-direction: column;
     margin: auto;
     margin-top: 200px;
@@ -63,6 +62,7 @@ form *{
     padding: 10px 5px;
     flex-direction: column;
     width: 90%;
+    margin: auto;
 }
 
 .buttonBox{
@@ -112,9 +112,17 @@ form *{
 
 
 /*************************** MEDIA QUERIES *******************************/
+@media(min-width: 768px){
+    form{
+        width: 75vw;
+    }
+}
 @media (min-width: 1220px){
     .mainHeaderBottomBar *{
         font-size: 18px;
+    }
+    form{
+        width: 50vw;
     }
     .icons *{
         transition: all 100ms;

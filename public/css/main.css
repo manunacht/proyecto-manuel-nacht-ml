@@ -36,6 +36,7 @@
         font-size: 18px;
     }
 }
+
 .phrase{
     padding-bottom: 10px;
 }
@@ -69,12 +70,10 @@
 }
 /**************************** MAIN ********************************/
 .main{
-
     width: 100%;
     margin: auto;
     text-align: left;
     background-color: #ebebeb;
-    
 }
 .basedOnYourLastVisit{
     background-color: #ebebeb;
@@ -83,7 +82,8 @@
     background-color: #ebebeb;
 }
 .images{
-    max-width: 320px;
+    width: 93%;
+    min-width: 320px;
     padding: 10px;
     margin: auto;
 }
@@ -116,7 +116,9 @@
 
 .titulares{
     font-size: 24px;
-    padding-top: 10px;
+    padding-top:20px;
+    margin-bottom: 20px;
+    padding-left: 60px;
 }
 .truck{
     display: block;
@@ -160,7 +162,7 @@
 }
 .icons *{
         font-size: 2em;
-        color: #03264C;
+        color: blue;
         margin-bottom: 10px;
 }
 
