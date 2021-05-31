@@ -93,6 +93,7 @@
     width: 90%;
     max-width: 340px;
     margin: auto;
+    border-radius: 4px;
 }
 .precios{
     font-size: 18px;
@@ -137,6 +138,7 @@
     border-top: solid 1px #ebebeb;
     padding: 15px;
     background-color: white;
+    border-radius: 4px;
 }
 .precioYDescuento{
     display: flex;
@@ -217,6 +219,10 @@
     .article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         max-width: 40vw;
+        border-radius: 6px;
+    }
+    .articleDivision{
+        border-radius: 6px;
     }
     .descripciones{
         display: block;
@@ -286,6 +292,10 @@
 
     .article{
         max-width: 22vw;
+        border-radius: 8px;
+    }
+    .articleDivision{
+        border-radius: 8px;
     }
     .descripciones{
         visibility: hidden;
@@ -299,21 +309,32 @@
     }
     @keyframes shaker {   
       0% {
-        transform: translateX(-10%);
+        transform: translateY(-30%);
+      }
+      10% {
+        transform: translateY(30%);
+      }
+      20% {
+        transform: translateY(-30%);
       }
     
-      50% {
-        transform: translateY(10%);
+      30% {
+        transform: translateY(30%);
       }
-    
+      40% {
+        transform: translateY(0%);
+      }
+      50%{
+          transform: translateX(-50%);
+      }
       100% {
-        transform: translateX(-10%);
+        transform: translateX(200%);
       }
     }
     .article:hover .truck {
         animation-name: shaker;
-        animation-duration: 100ms;
-        animation-iteration-count: infinite;
+        animation-duration: 1000ms;
+        animation-iteration-count: initial;
         animation-direction: normal;
     }
     .basedOnYourLastVisit{
