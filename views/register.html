@@ -27,7 +27,7 @@
 
                     <ul class = "leftNavBar">
                         <li><a href = "#">Ofertas</a></li>
-                        <li><a href = "/home">Tienda Oficial</a></li>
+                        <li><a href = "/">Tienda Oficial</a></li>
                         <li><a href = "#">Vender</a></li>
                         <li><a href = "#">Ayuda</a></li>
                     </ul> 
@@ -43,56 +43,68 @@
         <main class="main">
             <form action = "" method = "POST" class = "registerForm">
                 <h2 class="title">REGISTRATE!</h2>
-                <div class="">
-                    <label>Nombre y apellido:</label>
-                    <input type="text" name="completeName" placeholder="Juan Perez">
-                </div>
-                <div class="">
-                    <label>Nombre de usuari@:</label>
-                    <input type="text" name="username" placeholder="juancapo007">
-                </div>
-                <div class="">
-                    <label>Fecha de nacimiento:</label>
-                    <input type="date" name="DateOfBirth" placeholder="23/02/1927">
-                </div>
-                <div class="">
-                    <label>Domicilio</label>
-                    <input type="text" name="adress" placeholder="Avenida Siempreviva 742">
-                </div>
-                <div class="">
-                    <label>Perfil del usuario
-                        <input type="radio" name="userProfile" value="shops">
+                <fieldset class="">
+                    <legend>Nombre y apellido:</legend>
+                    <input type="text" name="completeName" required minlength="8" placeholder="Juan Perez">
+                </fieldset>
+                <fieldset class="">
+                    <legend>Nombre de usuari@:</legend>
+                    <input type="text" name="username" required minlength="8" placeholder="juancapo007">
+                </fieldset>
+                <fieldset class="">
+                    <legend>Fecha de nacimiento:</legend>
+                    <input type="date" name="DateOfBirth" required placeholder="23/02/1927">
+                </fieldset>
+                <fieldset class="">
+                    <legend>Domicilio</legend>
+                    <input type="text" name="adress" required minlength="10" placeholder="Avenida Siempreviva 742">
+                </fieldset>
+                <fieldset class="">
+                    <legend>Perfil del usuario</legend>
+                    <label for="shops">
+                        <input type="radio" name="userProfile" id="shops" value="shops">
                         Comprador
-                        <input type="radio" name="userProfile" value="sells">
+                    </label>
+                    <label for="sells">
+                        <input type="radio" name="userProfile" id="sells" value="sells">
                         Vendedor
                     </label>
-                </div>
-                <div class="">
-                    <label>Categorías de interés (puede elegir más de una):
-                        <input type="checkbox" name = "userInterests" value = "technology">
-                        Electro
-                        <input type="checkbox" name = "userInterests" value = "fashion">
-                        Moda
-                        <input type="checkbox" name = "userInterests" value = "homeDeco">
-                        Hogar
-                        <input type="checkbox" name = "userInterests" value = "toys">
-                        Juguetería
-                        <input type="checkbox" name = "userInterests" value = "fitness">
-                        Vida sana
-                    </label>
-                </div>
-                <div class="">
-                    <label>Foto del usuario</label>
-                    <input type="file" name="profilePicture" value="jpg">
-                </div>
-                <div class="">
-                    <label>Contraseña</label>
-                    <input type="password" name="password" placeholder="********" >
-                </div>
-                <div class="">
-                    <label>Confirme la contraseña</label>
-                    <input type="password" name="reenterPassword" placeholder="********" >
-                </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Categorías de interés (puede elegir más de una):</legend>
+                        <label for="tech" class="checkbox">
+                            <input type="checkbox" name = "userInterests" id="tech" value = "technology">
+                            Electro
+                        </label>
+                        <label for="moda" class="checkbox">
+                            <input type="checkbox" name = "userInterests" id="moda" value = "fashion">
+                            Moda
+                        </label>
+                        <label for="hogar" class="checkbox">
+                            <input type="checkbox" name = "userInterests" id="hogar" value = "homeDeco">
+                            Hogar
+                        </label>
+                        <label for="jugueteria" class="checkbox">
+                            <input type="checkbox" name = "userInterests" id="jugueteria" value = "toys">
+                            Juguetería
+                        </label>
+                        <label for="vidaSana" class="checkbox">
+                            <input type="checkbox" name = "userInterests" id="vidaSana" value = "fitness">
+                            Vida sana
+                        </label>
+                </fieldset>
+                <fieldset class="">
+                    <legend>Foto del usuario</legend>
+                    <input type="file" name="profilePicture" required accept="jpg">
+                </fieldset>
+                <fieldset class="">
+                    <legend>Contraseña</legend>
+                    <input type="password" name="password" required minlength="10" placeholder="********" >
+                </fieldset>
+                <fieldset class="">
+                    <legend>Confirme la contraseña</legend>
+                    <input type="password" name="reenterPassword" required minlength="10" placeholder="********" >
+                </fieldset>
                 <div class="buttonBox">
                     <button class = "button" type="submit">ENVIAR</button>
                     <button class = "button" type="reset">BORRAR</button>

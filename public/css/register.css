@@ -65,21 +65,25 @@ form *{
     margin: auto;
 }
 
+
+
 .buttonBox{
     display: flex;
+    margin-top: 5vh;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
 }
-.buttonBox *{
+
+.button{
     width: 35%;
-    background-color: grey;
+    background-color: lightblue;
     font-size: 20px;
     border-radius: 5px;
     border: black 3px solid;
     margin: auto;
 }
-
 
 .title{
     font-size: 30px;

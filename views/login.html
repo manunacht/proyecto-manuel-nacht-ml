@@ -27,7 +27,7 @@
 
                     <ul class = "leftNavBar">
                         <li><a href = "#">Ofertas</a></li>
-                        <li><a href = '/home'>Tienda Oficial</a></li>
+                        <li><a href = '/'>Tienda Oficial</a></li>
                         <li><a href = "#">Vender</a></li>
                         <li><a href = "#">Ayuda</a></li>
                     </ul> 
@@ -42,12 +42,12 @@
         <main>
             <form action="" method="POST">
                 <h2 class="title">INGRESA!</h2>
-                <div>
-                    <input type="text" name="username" placeholder="Nombre de usuari@">
-                </div>
-                <div>
-                    <input type="password" name="password" placeholder="Contraseña">
-                </div>
+                <fieldset>
+                    <input type="text" name="username" required minlength="8" placeholder="Nombre de usuari@">
+                </fieldset>
+                <fieldset>
+                    <input type="password" name="password" required minlength="10" placeholder="Contraseña">
+                </fieldset>
                 <button class="button" type="submit">INGRESAR</button>
             </form>
         </main>
